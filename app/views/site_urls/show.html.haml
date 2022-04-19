@@ -1,0 +1,10 @@
+%p#notice= notice
+%p
+  %strong Url:
+  = @site_url.url
+%p
+  %strong Date:
+  = @site_url.date
+= link_to 'Edit', edit_site_url_path(@site_url)
+
+= link_to 'Back', site_urls_path

@@ -1,0 +1,13 @@
+.top
+  .grid
+    .main
+      .main2
+        %h2.sign-in Validate Url
+        %p.email Url:
+        .input
+          = text_field_tag :url
+        %p
+        %button{onload: "loadinterval()", class: "validate-btn btn"} Enter
+        #urls-list
+
+
